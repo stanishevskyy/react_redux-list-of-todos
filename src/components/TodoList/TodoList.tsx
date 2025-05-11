@@ -14,7 +14,7 @@ export const TodoList: React.FC<Props> = ({ filteredTodos }) => {
   const dispatch = useAppDispatch();
 
   const handleChooseTodo = (value: Todo) => {
-    dispatch(currentTodoSlice.actions.addTodos(value));
+    dispatch(currentTodoSlice.actions.addCurrentTodo(value));
   };
 
   console.log(todo);

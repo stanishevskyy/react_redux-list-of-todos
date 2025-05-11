@@ -49,7 +49,9 @@ export const TodoModal: React.FC = () => {
               type="button"
               className="delete"
               data-cy="modal-close"
-              onClick={() => dispatch(currentTodoSlice.actions.deleteTodos())}
+              onClick={() =>
+                dispatch(currentTodoSlice.actions.clearCurrentTodo())
+              }
             />
           </header>
 
